@@ -11,15 +11,12 @@ public class Ex20 {
 		while (true) {
 
 			String retry;
-			int num = (int) (Math.random() * 100) + 1;
+			int num = 29;//(int) (Math.random() * 100) + 1;
 			int inputNum;
-			
-			
 
 			System.out.println("========================");
 			System.out.println("    [숫자맞추기게임 시작]");
 			System.out.println("========================");
-			System.out.println(num);
 			while (true) {
 
 				System.out.print(">>");
@@ -35,9 +32,9 @@ public class Ex20 {
 				}
 
 			}
-			sc.nextLine();
-
-			System.out.print("게임을 종료하시겠습니까?(y/n) >>");
+			sc.nextLine(); //버그수정
+			
+			System.out.print("게임을 종료할려면 y 를 누르세요(계속하려면 아무글자) >>");
 			retry = sc.nextLine();
 			if ("y".equals(retry)) {
 				System.out.println("========================");
